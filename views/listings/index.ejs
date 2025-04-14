@@ -1,0 +1,29 @@
+<% layout('./layouts/boilerplate') -%>
+
+
+<body>
+    
+    
+    
+    <div class="container my-5">
+        <h2 class="text-center mb-4 fw-semibold">All Listings</h2>
+      
+        <div class="row g-4">
+          <% for (const Listing of allListings) { %>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <a href="/listing/<%= Listing._id %>" class="text-decoration-none text-dark">
+                <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden">
+                  <img src="<%= Listing.image %>" class="card-img-top" alt="<%= Listing.title %>" draggable="false" style="height: 200px; object-fit: cover;">
+      
+                  <div class="card-body">
+                    <h5 class="card-title mb-2"><%= Listing.title %></h5>
+                    <p class="card-text fw-semibold text-muted mb-0">&#8377;<%= Listing.price.toLocaleString() %></p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          <% } %>
+        </div>
+      </div>
+      
+</body>

@@ -1,0 +1,28 @@
+{
+  "name": "airbnb-clone",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Garvit-singh-panwar/Airbnb-clone.git"
+  },
+  "keywords": [],
+  "author": "Garvit Singh Panwar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Garvit-singh-panwar/Airbnb-clone/issues"
+  },
+  "homepage": "https://github.com/Garvit-singh-panwar/Airbnb-clone#readme",
+  "description": "",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "ejs-mate": "^4.0.0",
+    "express": "^4.21.2",
+    "joi": "^17.13.3",
+    "method-override": "^3.0.0",
+    "mongoose": "^8.13.1"
+  }
+}
