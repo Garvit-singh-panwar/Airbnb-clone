@@ -34,7 +34,7 @@ footer{
     /* background: red; */
     padding: 20px;
     display: flex;
-    flex-direction: row-reverse;
+    /* flex-direction: row-reverse; */
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
@@ -49,7 +49,9 @@ footer > .part1{
 .part1 .local{
     display: flex;
     justify-content: space-around;
-    width: 200px;
+    /* width: 200px; */
+    gap: 10px;
+
     flex-wrap: wrap;
 }
 .part1 .local  h3{
@@ -57,7 +59,8 @@ font-size: 15px;
 }
 .part1 .social{
     display: flex;
-    width: 100px;
+    /* width: 100px; */
+    gap: 10px;
     height: 15px;
     justify-content: space-around;
     align-items: center;
@@ -72,7 +75,8 @@ footer .part2{
 
 footer .services{
     display: flex;
-    width: 350px;
+    /* width: 350px; */
+    gap: 10px;
     justify-content: space-around;
     
 }
@@ -98,4 +102,14 @@ footer .services{
 
 .mt{
     margin-top: 20px !important;
+}
+.mr{
+    margin-right: 20px !important;
+}
+
+.review {
+    /* border-radius: 20px; */
+    padding: 10px;
+    /* border: 1px solid black; */
+   
 }
