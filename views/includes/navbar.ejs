@@ -1,21 +1,35 @@
 
 
-<nav class="navbar navbar-expand-md bg-white shadow-sm border-bottom sticky-top">
-  <div class="container">
-    <a class="navbar-brand d-flex align-items-center gap-2 fw-semibold text-dark" href="/">
+<nav class="navbar navbar-expand-md bg-body-light border-bottom sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">
       <i class="fa-regular fa-compass"></i>
-      WanderStay
     </a>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#navbarNavAltMarkup" >
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+    
+
+    <div class="collapse navbar-collapse "id="navbarNavAltMarkup">
       <div class="navbar-nav">
         <a class="nav-link" href="/">Home</a>
         <a class="nav-link" href="/listings">All Listings</a>
         <a class="nav-link" href="/listings/new">Add New Listing</a>
+      </div>
+       <div class="navbar-nav ms-auto">
+        <% if(!currUser){ %>
+          <a class="nav-link" href="/signup">Sign Up</a>
+          <a class="nav-link" href="/login">Log In</a>
+        <%}%>
+        <%if(currUser){%>
+          <a class="nav-link" href="/logout">log out</a>
+        <%}%>
+       
+        
       </div>
     </div>
   </div>
