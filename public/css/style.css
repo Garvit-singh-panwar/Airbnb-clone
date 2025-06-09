@@ -113,3 +113,12 @@ footer .services{
     /* border: 1px solid black; */
    
 }
+
+
+/* map style */
+
+#map{
+    
+    height: 400px;
+    width: 80vw;
+}
