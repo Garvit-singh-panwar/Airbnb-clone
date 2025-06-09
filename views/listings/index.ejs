@@ -13,7 +13,7 @@
             <div class="col-sm-6 col-md-4 col-lg-3">
               <a href="/listings/<%= Listing._id %>" class="text-decoration-none text-dark">
                 <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden">
-                  <img src="<%= Listing.image %>" class="card-img-top" alt="<%= Listing.title %>" draggable="false" style="height: 200px; object-fit: cover;">
+                  <img src="<%= Listing.image.url %>" class="card-img-top" alt="<%= Listing.title %>" draggable="false" style="height: 200px; object-fit: cover;">
       
                   <div class="card-body">
                     <h5 class="card-title mb-2"><%= Listing.title %></h5>

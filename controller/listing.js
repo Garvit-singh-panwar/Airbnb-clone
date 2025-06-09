@@ -12,12 +12,15 @@ module.exports.renderNewForm = (req,res)=>{
 };
 
 module.exports.createListing = async (req,res)=>{
-    
-     const listing = new Listing(req.body.Listing);
-      listing.owner = req.user._id;
-       await listing.save();
-       req.flash("success" , "new listing created!");
-       res.redirect('/listings');
+    let url = req.file.path;
+    let filename = req.file.filename;
+
+    const listing = new Listing(req.body.Listing);
+    listing.owner = req.user._id;
+    listing.image = { url , filename};
+    await listing.save();
+    req.flash("success" , "new listing created!");
+    res.redirect('/listings');
 };
 
 module.exports.showListing = async (req,res)=>{
